@@ -2,244 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" conetent="width=device-height , initial-scale= 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazom.com</title>
-    <link rel="website icon" type="png" href="pics/wave.png">
+    <link rel="icon" href="pics/wave.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-</head> 
-<style>
-    body{
-        font-family: 'Franklin Gothic Medium', sans-serif;
-    }
-    .container1{
-        height: 80px;
-        width: 100%;
-        background-color:  rgb(46, 46, 46);
-        color: aliceblue;
-        display: flex; 
-        align-items: center;
-        gap: 5px; 
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .bar{
-        height: 30px;
-        width: 800px;
-        border: 1px solid black;
-        border-radius: 5px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        padding: 5px;
-        margin-left: 10px;
-        margin-right: 5px;
-    }
-    .langguage{
-        border: none;
-        font-weight: bold;
-        background-color: rgb(46, 46, 46) ;
-        height: 50px;
-        width: 50px;
-        color: white;
-    }
-    .langguage:hover{
-        border: 1px solid  white;
-        height: 50px;
-        width: 50px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-    .deliver{
-        height: 60px;
-        width: 60px;
-        display: flex;
-        align-items: center;
-        border: none;
-        font-weight: bold;
-        background-color: rgb(46, 46, 46) ;
-        height: 50px;
-        width: 80px;
-        color: white;
-    }
-    .deliver:hover{
-        border: 1px solid  white;
-        height: 50px;
-        width: 80px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-    .heading{
-        margin-right: 10px;
-        display: flex;
-        margin-left: 30px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .signin-button{
-        border: none;
-        font-weight: bold;
-        background-color: rgb(46, 46, 46) ;
-        height: 50px;
-        width: 70px;
-        color: white;
-    }
-    .signin-button:hover{
-        border: 1px solid  white;
-        height: 50px;
-        width: 70px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-    .login-button{
-        height: 50px;
-        width: 70px;
-        border: 1px solid white;
-        font-weight: bold;
-        background-color: rgb(46, 46, 46) ;
-        color: white;
-        transition: opacity 1s;
-        border-radius: 15px;
-    }
-    .login-button:hover{
-        height: 50px;
-        width: 70px;
-        opacity: var(1s);
-    }
-    .order{
-        border: none;
-        font-weight: bold;
-        background-color: rgb(46, 46, 46) ;
-        height: 50px;
-        width: 70px;
-        color: white;
-    }
-    .order:hover{
-        border: 1px solid  white;
-        height: 50px;
-        width: 70px;
-    }
-    i {
-        border: none;
-        background-color: rgb(46, 46, 46) ;
-        height: 50px;
-        width: 95px;
-        color: white;
-        text-align: center;
-        justify-content: center ;
-        align-items: center;
-    }
-    i:hover{
-        border: 1px solid  white;
-        height: 50px;
-        width: 90px;
-        text-align: center;
-        justify-content: center ;
-        align-items: center;
-        background-color: rgb(46, 46, 46) ;
-        display: flex;
-    }
-    .item1{
-        border: 1px solid black;
-        margin: auto;
-        background-color: burlywood ;
-        justify-content: center;
-        text-align: center;
-        height: 500px;
-        width: 300px;
-        padding: 40px;
-        box-shadow: 10px 10px 15px rgb(168, 167, 167) ;
-        background-image: src="wave.jpeg";
-    }
-    .link{
-        color: red;
-        font-weight: lighter;
-        font-family: Arial;
-    }
-    .link:hover{
-        color: rgb(245, 245, 22);
-        opacity: 1;
-    }
-    .p1{
-        color: green;
-        font-weight: lighter;
-    }
-    .addtocart-button{
-        height: 50px;
-        width: 100px;
-        border-radius: 25px;
-        background-color: rgb(236, 236, 11);
-        transition: background-color 1s;
-        cursor: pointer;
-        margin-right: 15px;
-        border: none;
-        font-weight: bold;
-    }
-    .addtocart-button:hover{
-        background-color: aquamarine;
-    }
-    .addtocart-button:active{
-        opacity: 0.10;
-        background-color: rgb(219, 0, 0);
-    }
-    .buynow-button{
-        height: 50px;
-        width: 100px;
-        border-radius: 25px;
-        background-color: rgb(236, 236, 11);
-        transition: background-color 1s;
-        cursor: pointer;
-        border: none;
-        font-weight: bold;
-    }
-    .buynow-button:hover{
-        background-color: aquamarine;
-    }
-    .buynow-button:active{
-        opacity: 0.10;
-        background-color: rgb(219, 0, 0);
-    }
-    .nike{
-        border: 2px solid black;
-    }
+        .container1 {
+            height: auto;
+             width: 100%;
+            background-color: #2e2e2e;
+            color: aliceblue;
+             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            flex-wrap: nowrap;
+        }
+
+
+        .search-bar {
+            width: 910px;
+            height: 30px;
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid #333;
+            flex: ;
+        }
+
+        .btn {
+            border: none;
+            background-color: #2e2e2e;
+            color: white;
+            height: 50px;
+            padding: 0 15px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #444;
+        }
+
+        .btn:active {
+            opacity: 0.7;
+        }
+
+        .cart-icon {
+            font-size: 30px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .cart-icon:hover {
+            opacity: 0.7;
+        }
+
+        .item-card {
+            background-color: burlywood;
+            width: 300px;
+            margin: 20px auto;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 10px 10px 15px rgba(168, 167, 167, 0.5);
+            border-radius: 8px;
+            background-image: url('wave.jpeg');
+        }
+
+        .item-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .item-card .p1 {
+            color: green;
+        }
+
+        .item-card a {
+            text-decoration: none;
+            color: red;
+            font-weight: lighter;
+            transition: color 0.3s;
+        }
+
+        .item-card a:hover {
+            color: rgb(245, 245, 22);
+        }
+
+        .item-card button {
+            background-color: rgb(236, 236, 11);
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .item-card button:hover {
+            background-color: aquamarine;
+        }
+
+        .item-card button:active {
+            opacity: 0.7;
+            background-color: rgb(219, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
     
-</style>
-<body> 
-    <div>
-        <div class="container1">
-            <h1 class="heading">amazon</h1>
-            <i class="fa-solid fa-location-dot"></i>
-            <button class="deliver">Deliver to Phillipines  </button>
-            <input class="bar" type="text" placeholder="Search Item">
-            <button class="langguage">EN</button>
-            <button class="signin-button">Sign in</button>
-            <button class="login-button">Log in</button>
-            <button class="order">Return <br>& Order</button>
-            <i style="color: rgb(255, 255, 255);" class="fa-solid fa-cart-shopping "></i>
-        </div>
-        
-        <br>
-        <br>
-
-        <div  class="item1">
-            <a href="" class="link"> Back to Amazon </a>
-            <h1> Nike Black Running Shoes </h1>
-            <img class="nike" src="nike.jpeg" alt="nike">
-            
-            <br>
-            <br>
-
-            <p1 class="p1"> $39 - In Stock. </p1>
-            <h5> Free Delivery Tommorow </h5>
-            <button class="addtocart-button"> Add to Cart </button>
-            <button class="buynow-button"> Buy Now </button>
+    <div class="container1">
+        <h1>Amazon</h1>
+        <div>
+            <i class="fa-solid fa-location-dot cart-icon"></i>
+            <button class="btn">Deliver to Philippines</button>
+            <input type="text" class="search-bar" placeholder="Search Item">
+            <button class="btn">EN</button>
+            <button class="btn">Sign in</button>
+            <button class="btn">Log in</button>
+            <button class="btn">Return & Order</button>
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
         </div>
     </div>
+
+    <div class="item-card">
+        <a href="" class="link">Back to Amazon</a>
+        <h1>Nike Black Running Shoes</h1>
+        <img src="nike.jpeg" alt="Nike">
+        <p class="p1">$39 - In Stock</p>
+        <h5>Free Delivery Tomorrow</h5>
+        <button>Add to Cart</button>
+        <button>Buy Now</button>
+    </div>
+
 </body>
-
-<script>
-   
-</script>
-
+</html>
